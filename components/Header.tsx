@@ -32,7 +32,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center">
-            <img src="../assets/logo.jpeg" alt="Safemax Consultants Limited Logo" className="h-14 w-auto" />
+            <img src="/logo.jpeg" alt="Safemax Consultants Limited Logo" className="h-14 w-auto" />
           </Link>
           <nav className="hidden md:flex items-center space-x-2">
             {navLinks.map((link) => (
