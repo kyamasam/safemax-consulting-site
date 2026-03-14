@@ -1,15 +1,13 @@
 
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { logoBase64 } from '../assets/logo';
 
 const NavItem: React.FC<{ to: string; children: React.ReactNode }> = ({ to, children }) => {
   return (
     <NavLink
       to={to}
       className={({ isActive }) =>
-        `block md:inline-block px-4 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
-          isActive ? 'bg-primary text-white' : 'text-gray-700 hover:bg-primary/10'
+        `block md:inline-block px-4 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${isActive ? 'bg-primary text-white' : 'text-gray-700 hover:bg-primary/10'
         }`
       }
     >
@@ -34,7 +32,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center">
-            <img src={logoBase64} alt="Safemax Consultants Limited Logo" className="h-14 w-auto" />
+            <img src="../assets/logo.jpeg" alt="Safemax Consultants Limited Logo" className="h-14 w-auto" />
           </Link>
           <nav className="hidden md:flex items-center space-x-2">
             {navLinks.map((link) => (
