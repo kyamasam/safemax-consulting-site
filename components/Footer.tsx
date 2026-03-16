@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const LinkedinIcon: React.FC<{ className?: string }> = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -41,7 +40,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-bold font-heading mb-4">Contact Us</h3>
             <ul className="text-sm space-y-2 text-gray-300">
               <li>Phone: 0114646081 / 0711700652</li>
-              <li>Email: info@safemaxconsultants.com</li>
+              <li>Email: info@safemaxconsultants.co.ke</li>
               <li>Address: Mombasa, Kenya</li>
             </ul>
           </div>

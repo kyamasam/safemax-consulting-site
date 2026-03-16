@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
                         <h2 className="text-2xl font-bold font-heading text-primary mb-4">Contact Information</h2>
                         <ul className="space-y-4 text-gray-600">
                             <li className="flex items-center"><span className="font-semibold w-20">Phone:</span> 0114646081 / 0711700652</li>
-                            <li className="flex items-center"><span className="font-semibold w-20">Email:</span> info@safemaxconsultants.com</li>
+                            <li className="flex items-center"><span className="font-semibold w-20">Email:</span> info@safemaxconsultants.co.ke</li>
                             <li className="flex items-center"><span className="font-semibold w-20">Address:</span> Mombasa, Kenya</li>
                         </ul>
                     </div>
@@ -47,15 +47,15 @@ const Contact: React.FC = () => {
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <div>
                                 <label htmlFor="name" className="sr-only">Name</label>
-                                <input type="text" name="name" id="name" placeholder="Name" value={formData.name} onChange={handleChange} required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"/>
+                                <input type="text" name="name" id="name" placeholder="Name" value={formData.name} onChange={handleChange} required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" />
                             </div>
                             <div>
                                 <label htmlFor="email" className="sr-only">Email</label>
-                                <input type="email" name="email" id="email" placeholder="Email" value={formData.email} onChange={handleChange} required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"/>
+                                <input type="email" name="email" id="email" placeholder="Email" value={formData.email} onChange={handleChange} required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" />
                             </div>
-                             <div>
+                            <div>
                                 <label htmlFor="phone" className="sr-only">Phone</label>
-                                <input type="tel" name="phone" id="phone" placeholder="Phone" value={formData.phone} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"/>
+                                <input type="tel" name="phone" id="phone" placeholder="Phone" value={formData.phone} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" />
                             </div>
                             <div>
                                 <label htmlFor="message" className="sr-only">Message</label>
