@@ -1,0 +1,36 @@
+; Cloudflare Zone Import File
+; Domain: safemaxconsultants.co.ke
+; Generated: 2026-03-17
+; Format: BIND zone file (RFC 1035)
+
+$ORIGIN safemaxconsultants.co.ke.
+$TTL 86400
+
+; A Records
+@                       86400   IN  A       185.216.75.122
+mail                    86400   IN  A       185.216.75.122
+www                     86400   IN  A       185.216.75.122
+*                       86400   IN  A       185.216.75.122
+
+; MX Record
+@                       86400   IN  MX  10  mail.safemaxconsultants.co.ke.
+
+; CNAME Records
+autoconfig              86400   IN  CNAME   mail.safemaxconsultants.co.ke.
+autodiscover            86400   IN  CNAME   mail.safemaxconsultants.co.ke.
+
+; AAAA Record (IPv6)
+mail                    86400   IN  AAAA    2a02:c207:2315:3883::1
+
+; -----------------------------------------------
+; TODO: Add these records after setting up email
+; -----------------------------------------------
+
+; SPF Record (replace with your mail server IP if different)
+; @                     86400   IN  TXT     "v=spf1 ip4:185.216.75.122 ip6:2a02:c207:2315:3883::1 ~all"
+
+; DKIM Record (get this value from your mail server after generating keys)
+; mail._domainkey       86400   IN  TXT     "v=DKIM1; k=rsa; p=YOUR_PUBLIC_KEY_HERE"
+
+; DMARC Record
+; _dmarc                86400   IN  TXT     "v=DMARC1; p=none; rua=mailto:admin@safemaxconsultants.co.ke"
